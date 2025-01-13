@@ -17,7 +17,7 @@ let package = Package(
 	dependencies: [
 		.package(
 			url: "https://github.com/square/wire",
-			.upToNextMinor(from: "4.7.0")
+			.upToNextMajor(from: "5.2.0")
 		),
 	],
 	targets: [
