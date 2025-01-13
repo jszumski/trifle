@@ -5,6 +5,9 @@ platform :ios, '14.0'
 target 'Trifle_Example' do
   pod 'Trifle', :path => '../../'
 
+  # point at the Wire repo directly since 4.9.3 is missing from trunk
+  pod 'Wire', :git => 'https://github.com/square/wire.git', :tag => '4.9.3'
+
   target 'Trifle_Tests' do
     inherit! :search_paths
 

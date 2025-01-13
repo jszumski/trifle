@@ -1,27 +1,35 @@
 PODS:
-  - Trifle (0.2.5):
-    - Wire (~> 4.7)
-  - Wire (4.7.2)
+  - Trifle (0.2.6):
+    - Wire (= 4.9.3)
+  - Wire (4.9.3)
   - WireCompiler (4.5.1)
 
 DEPENDENCIES:
   - Trifle (from `../../`)
+  - Wire (from `https://github.com/square/wire.git`, tag `4.9.3`)
   - WireCompiler (= 4.5.1)
 
 SPEC REPOS:
   trunk:
-    - Wire
     - WireCompiler
 
 EXTERNAL SOURCES:
   Trifle:
     :path: "../../"
+  Wire:
+    :git: https://github.com/square/wire.git
+    :tag: 4.9.3
+
+CHECKOUT OPTIONS:
+  Wire:
+    :git: https://github.com/square/wire.git
+    :tag: 4.9.3
 
 SPEC CHECKSUMS:
-  Trifle: 640389000f04f073a54b82d237b2ac5afb081a80
-  Wire: 193a6a025213e0c2d13875fdef225df34d10b775
+  Trifle: 312c21467e3d5e77099d92467aa582c7cfd92edf
+  Wire: 292dc634a9f4517dd9761004ebb11e8725aa5436
   WireCompiler: 417c2ac583c01de328010738658758556ea92a92
 
-PODFILE CHECKSUM: 4b8d6c2fc4c9668821977302cb1ff5c5891d9920
+PODFILE CHECKSUM: 470144e73b4c78cb747703af179a1950435c5764
 
 COCOAPODS: 1.15.0
