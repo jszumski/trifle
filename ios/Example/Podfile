@@ -17,5 +17,6 @@ end
 target 'Trifle_macOS_Dummy' do
   platform :macos, '10.15'
   
-  pod 'WireCompiler', '4.5.1'
+  # point at the Wire repo directly since 4.9.3 is missing from trunk
+  pod 'WireCompiler', :git => 'https://github.com/square/wire.git', :tag => '4.9.3'
 end
